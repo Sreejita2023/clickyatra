@@ -3,7 +3,7 @@ import { View,Text,StyleSheet,TouchableHighlight,Image } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 
 
-export default function Page4() {
+export default function Page4({navigation}) {
  
   return (
     <View>
@@ -18,7 +18,7 @@ export default function Page4() {
         source={require('../main-assets/woman.png')}
       />
      
-      <TouchableHighlight style={styles.button} >
+      <TouchableHighlight style={styles.button} onPressIn={()=>{navigation.navigate('Signin')}} >
         <View >
           <Text style={{color:'#FFFFFF',fontWeight:'semibold',fontSize:20,}}>Let's started</Text>
         </View>
