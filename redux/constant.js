@@ -1,0 +1,7 @@
+
+export const SEARCH_VALUE="SEARCH_VALUE"
+export const SET_PLACE_LIST="SET_PLACE_LIST"
+export const SET_HOTEL_LIST="SET_HOTEL_LIST"
+export const HOTEL_VALUE="HOTEL_VALUE"
+
+

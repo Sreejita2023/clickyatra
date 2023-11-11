@@ -38,7 +38,7 @@ export default function Signup({navigation}) {
             .then((userCredential) => {
               const user = userCredential.user;
              
-              navigation.navigate('Home')
+              navigation.navigate('Signin')
             })
             .catch((error) => {
               setModal(true)

@@ -6,10 +6,13 @@ import Page3 from '../start/Page3';
 import Page4 from '../start/Page4';
 import Signin from '../authentication/Signin';
 import Signup from '../authentication/Signup'
-import Home from '../pages/Home'
+import  Home  from './Home';
+import  Location  from '../pages/Location';
+import Hotel_search from '../hotels/Hotel_search';
 function Appnavigation() {
   const Stack = createStackNavigator();
   return (
+    
     <Stack.Navigator initialRouteName="Page1"screenOptions={{
         headerShown: false
       }}>
@@ -41,7 +44,16 @@ function Appnavigation() {
       name="Home"
       component={Home}
     />
-   
+    <Stack.Screen
+          name="Location"
+          component={Location}
+          options={{ headerShown: true }} 
+        />
+    <Stack.Screen
+          name="Hotel_search"
+          component={Hotel_search}
+          options={{ headerShown: true }} 
+        />
   </Stack.Navigator>
   )
 }
